@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.danger{
+    color:red;
+}
+p,h1,h2,h3,h4,h5,h6,label{
+    color: white;
+    text-align: center;
+}
+.med{
+    font-size: 20px;
+}
+.big{
+    font-size: 40px;
+}
+body{
+    background-color: black;
+    padding: 0px;
+    text-align: center;
+}
+#canvas{
+    border: 1px solid white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.bottom{
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+}
+.top{
+    text-align: center;
+}
+</style>
+</head>
+<body onload="load()">
+    <div class="top">
+        <h2 class="big">Mars Rover</h2>
+    </div>
+    <canvas id="canvas" height="400px" width="600px"></canvas>
+    <div class="bottom">
+        <p class = "med"><span class="danger">Note: </span>If rover not visable click any arrow key.</p>
+        <br/><br/><br/><br/>
+        <p><span>Fuel:</span><span id="fuel"></span></p>
+        <p><span>Speed:</span><span id="speed"></span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
